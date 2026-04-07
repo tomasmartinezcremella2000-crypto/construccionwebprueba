@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactá a ConstructUY por WhatsApp o teléfono. Presupuesto sin compromiso." />
+  <title>Contacto — ConstructUY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo" aria-label="Inicio">
+        <span class="navbar__logo-icon">🏗</span>
+        ConstructUY
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="active navbar__cta" aria-current="page">Contactar</a></li>
+      </ul>
+
+      <label for="nav-toggle" class="navbar__hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════
+       PAGE HERO
+  ════════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="container animate-in">
+      <p class="section-label">Hablemos</p>
+      <h1 class="section-title" style="font-size: clamp(2.8rem, 6vw, 4.4rem);">
+        Contacto<span style="color:var(--color-accent)">.</span>
+      </h1>
+      <p class="section-subtitle">
+        Escribinos y coordinamos tu trabajo hoy mismo.
+        Respondemos rápido, sin vueltas.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SECCIÓN CONTACTO PRINCIPAL
+  ════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ── Columna izquierda: datos de contacto ── -->
+        <div class="animate-in">
+
+          <!-- Card de contacto directo -->
+          <div class="contact-info">
+
+            <p class="section-label">Contacto directo</p>
+            <div class="contact-info__phone">
+              098 794 903
+            </div>
+            <p class="contact-info__text">
+              Llamanos o escribinos por WhatsApp. Atendemos de
+              lunes a sábado de 8:00 a 18:00 hs.
+              <br><br>
+              Contanos qué necesitás y te pasamos presupuesto
+              <strong style="color: var(--color-text);">sin compromiso</strong>.
+            </p>
+
+            <!-- Botones grandes de contacto -->
+            <div class="contact-buttons">
+
+              <!-- WhatsApp — canal principal -->
+              <a
+                href="https://wa.me/598098794903?text=Hola,%20quiero%20consultar%20por%20un%20trabajo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-wa"
+                style="font-size:1.1rem; padding: 18px 24px;"
+              >
+                💬 &nbsp; WhatsApp · 098 794 903
+              </a>
+
+              <!-- Llamar -->
+              <a
+                href="tel:+598098794903"
+                class="btn btn-call"
+                style="font-size:1.05rem; padding: 16px 24px;"
+              >
+                📞 &nbsp; Llamar ahora
+              </a>
+
+            </div><!-- /contact-buttons -->
+
+            <!-- Horarios y info extra -->
+            <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--color-border);">
+              <div class="footer__contact-item" style="margin-bottom: 12px;">
+                ⏰ <span>Lunes a sábado · 8:00 – 18:00 hs</span>
+              </div>
+              <div class="footer__contact-item" style="margin-bottom: 12px;">
+                🇺🇾 <span>Atendemos en todo Uruguay</span>
+              </div>
+              <div class="footer__contact-item">
+                ⚡ <span>Respuesta en menos de 24 hs</span>
+              </div>
+            </div>
+
+          </div><!-- /contact-info -->
+
+        </div><!-- /columna izquierda -->
+
+
+        <!-- ── Columna derecha: formulario simple ── -->
+        <div class="animate-in animate-in--delay-1">
+
+          <div class="contact-form">
+            <h2 class="contact-form__title">Dejanos tu mensaje</h2>
+
+            <!-- NOTA TÉCNICA:
+                 Este formulario está hecho solo en HTML/CSS.
+                 Para hacerlo funcional necesitás conectarlo a un
+                 servicio como Formspree (formspree.io) o Netlify Forms.
+                 Ejemplo con Formspree:
+                 <form action="https://formspree.io/f/TU_ID" method="POST">
+            -->
+            <form
+              action="https://formspree.io/f/CAMBIA_ESTE_ID"
+              method="POST"
+              aria-label="Formulario de contacto"
+            >
+
+              <!-- Campo: nombre -->
+              <div class="form-group">
+                <label for="nombre" class="form-label">Tu nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form-input"
+                  placeholder="Ej: Juan García"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <!-- Campo: teléfono -->
+              <div class="form-group">
+                <label for="telefono" class="form-label">Tu teléfono (opcional)</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="form-input"
+                  placeholder="Ej: 099 123 456"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <!-- Campo: mensaje -->
+              <div class="form-group">
+                <label for="mensaje" class="form-label">¿En qué podemos ayudarte?</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  class="form-textarea"
+                  placeholder="Contanos qué trabajo necesitás: baño, cocina, obra nueva, mantenimiento..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Botón de envío -->
+              <button type="submit" class="form-submit">
+                📩 &nbsp; Enviar mensaje
+              </button>
+
+              <!-- Texto de confianza debajo del botón -->
+              <p style="font-size:.8rem; color: var(--color-muted); margin-top: 12px; text-align: center;">
+                También podés escribirnos directamente por
+                <a
+                  href="https://wa.me/598098794903"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: #25D366; font-weight: 600;"
+                >
+                  WhatsApp
+                </a>
+                para una respuesta más rápida.
+              </p>
+
+            </form>
+
+          </div><!-- /contact-form -->
+
+        </div><!-- /columna derecha -->
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       TRUST STRIP — Íconos de confianza
+  ════════════════════════════════════════ -->
+  <section class="section--tight" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="services-grid animate-in" style="margin-top: 0;">
+
+        <div class="service-card" style="text-align:center; padding: 28px 20px;">
+          <div style="font-size:2rem; margin-bottom: 10px;">⚡</div>
+          <p style="font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; text-transform: uppercase; color: var(--color-white); margin-bottom: 6px;">Respuesta rápida</p>
+          <p style="font-size:.88rem; color: var(--color-muted);">Contestamos en menos de 24 hs.</p>
+        </div>
+
+        <div class="service-card" style="text-align:center; padding: 28px 20px;">
+          <div style="font-size:2rem; margin-bottom: 10px;">💰</div>
+          <p style="font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; text-transform: uppercase; color: var(--color-white); margin-bottom: 6px;">Sin compromiso</p>
+          <p style="font-size:.88rem; color: var(--color-muted);">El presupuesto es gratis y sin obligación.</p>
+        </div>
+
+        <div class="service-card" style="text-align:center; padding: 28px 20px;">
+          <div style="font-size:2rem; margin-bottom: 10px;">✅</div>
+          <p style="font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; text-transform: uppercase; color: var(--color-white); margin-bottom: 6px;">Trabajo garantizado</p>
+          <p style="font-size:.88rem; color: var(--color-muted);">Cumplimos lo que prometemos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">
+            <span class="footer__brand-icon">🏗</span>
+            ConstructUY
+          </div>
+          <p class="footer__brand-text">
+            Construcción y reformas en Uruguay.
+            Trabajamos con compromiso, calidad y puntualidad.
+          </p>
+          <a
+            href="https://wa.me/598098794903"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__wa"
+          >
+            💬 Escribinos por WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <p class="footer__heading">Navegación</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contacto</p>
+          <div class="footer__contact-item">📱 <strong>098 794 903</strong></div>
+          <div class="footer__contact-item">🇺🇾 Uruguay</div>
+          <div class="footer__contact-item">⏰ Lun–Sáb · 8:00–18:00</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ConstructUY — Todos los derechos reservados</p>
+        <a
+          href="https://wa.me/598098794903?text=Hola,%20quiero%20un%20presupuesto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-wa"
+          style="padding:10px 20px; font-size:.9rem;"
+        >
+          💬 WhatsApp ahora
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

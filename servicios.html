@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicios de construcción y reformas en Uruguay: reformas integrales, construcción desde cero, mantenimiento y más." />
+  <title>Servicios — ConstructUY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR (idéntico en todas las páginas)
+  ════════════════════════════════════════ -->
+  <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo" aria-label="Inicio">
+        <span class="navbar__logo-icon">🏗</span>
+        ConstructUY
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active" aria-current="page">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="navbar__cta">Contactar</a></li>
+      </ul>
+
+      <label for="nav-toggle" class="navbar__hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════
+       PAGE HERO — Encabezado de página
+  ════════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="container animate-in">
+      <p class="section-label">Lo que hacemos</p>
+      <h1 class="section-title" style="font-size: clamp(2.8rem, 6vw, 4.4rem);">
+        Nuestros <span>servicios</span>
+      </h1>
+      <p class="section-subtitle">
+        Soluciones completas para tu hogar o proyecto. Pedí presupuesto
+        sin compromiso y te respondemos rápido.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SERVICIOS — DETALLE COMPLETO
+       Cada servicio con descripción y tags.
+  ════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="services-detail">
+
+        <!-- ── Servicio 1: Reformas ── -->
+        <article class="service-detail-item animate-in">
+          <div class="service-detail-item__num" aria-hidden="true">01</div>
+          <div>
+            <h2 class="service-detail-item__title">Reformas</h2>
+            <p class="service-detail-item__text">
+              Renovamos tu casa, baño, cocina o cualquier espacio de forma rápida y eficiente.
+              Trabajamos con materiales de calidad y terminaciones prolijas que marcan la diferencia.
+              Ya sea una reforma parcial o integral, coordinamos todo el proceso para que no tengas
+              que preocuparte por nada.
+            </p>
+            <!-- Tags de trabajos incluidos -->
+            <div class="service-detail-item__tags">
+              <span class="tag">Baños</span>
+              <span class="tag">Cocinas</span>
+              <span class="tag">Dormitorios</span>
+              <span class="tag">Pisos</span>
+              <span class="tag">Paredes</span>
+              <span class="tag">Techos</span>
+              <span class="tag">Revestimientos</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Servicio 2: Construcción ── -->
+        <article class="service-detail-item animate-in animate-in--delay-1">
+          <div class="service-detail-item__num" aria-hidden="true">02</div>
+          <div>
+            <h2 class="service-detail-item__title">Construcción</h2>
+            <p class="service-detail-item__text">
+              Realizamos obras desde cero con materiales de calidad y mano de obra confiable.
+              Hemos trabajado en cooperativas de viviendas, casas individuales y proyectos de
+              múltiples habitaciones. Cumplimos con los tiempos acordados y te mantenemos
+              informado en cada etapa de la obra.
+            </p>
+            <div class="service-detail-item__tags">
+              <span class="tag">Viviendas nuevas</span>
+              <span class="tag">Ampliaciones</span>
+              <span class="tag">Estructuras</span>
+              <span class="tag">Mampostería</span>
+              <span class="tag">Hormigón</span>
+              <span class="tag">Cooperativas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Servicio 3: Mantenimiento ── -->
+        <article class="service-detail-item animate-in animate-in--delay-2">
+          <div class="service-detail-item__num" aria-hidden="true">03</div>
+          <div>
+            <h2 class="service-detail-item__title">Mantenimiento</h2>
+            <p class="service-detail-item__text">
+              Solucionamos problemas, arreglos y mejoras sin vueltas. Desde una humedad
+              hasta una refacción urgente: respondemos rápido y llegamos con todo lo necesario
+              para dejarte el trabajo terminado ese mismo día o en el menor tiempo posible.
+            </p>
+            <div class="service-detail-item__tags">
+              <span class="tag">Humedades</span>
+              <span class="tag">Filtraciones</span>
+              <span class="tag">Pintura</span>
+              <span class="tag">Instalaciones</span>
+              <span class="tag">Urgencias</span>
+              <span class="tag">Reparaciones</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /services-detail -->
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       PROCESO — Cómo trabajamos
+  ════════════════════════════════════════ -->
+  <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+
+      <div class="animate-in">
+        <p class="section-label">Cómo trabajamos</p>
+        <h2 class="section-title">El proceso es <span>simple</span></h2>
+        <p class="section-subtitle">
+          Sin burocracia, sin demoras. Del contacto al trabajo en el menor tiempo posible.
+        </p>
+      </div>
+
+      <!-- Pasos -->
+      <div class="services-grid" style="margin-top: 52px;">
+
+        <article class="service-card animate-in animate-in--delay-1">
+          <div class="service-card__icon">📲</div>
+          <h3 class="service-card__title">1. Contactás</h3>
+          <p class="service-card__text">
+            Nos escribís por WhatsApp o llenás el formulario de contacto.
+            Respondemos rápido.
+          </p>
+        </article>
+
+        <article class="service-card animate-in animate-in--delay-2">
+          <div class="service-card__icon">📋</div>
+          <h3 class="service-card__title">2. Presupuesto</h3>
+          <p class="service-card__text">
+            Te pasamos un presupuesto claro y sin sorpresas.
+            Sin compromiso.
+          </p>
+        </article>
+
+        <article class="service-card animate-in animate-in--delay-3">
+          <div class="service-card__icon">✅</div>
+          <h3 class="service-card__title">3. Arrancamos</h3>
+          <p class="service-card__text">
+            Coordinamos la fecha, llegamos puntual y hacemos
+            el trabajo como corresponde.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       CTA BAND — al final de la página
+  ════════════════════════════════════════ -->
+  <section class="cta-band" aria-label="Llamada a la acción">
+    <div class="container">
+      <div class="cta-band__inner">
+
+        <div>
+          <h2 class="cta-band__title">¿Necesitás<br>hacer un trabajo?</h2>
+          <p class="cta-band__text">
+            Contactanos ahora y te pasamos presupuesto sin compromiso.
+          </p>
+        </div>
+
+        <a
+          href="https://wa.me/598098794903?text=Hola,%20vi%20sus%20servicios%20y%20quiero%20consultar%20por%20un%20presupuesto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta-band__btn"
+        >
+          👉 Hablar por WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">
+            <span class="footer__brand-icon">🏗</span>
+            ConstructUY
+          </div>
+          <p class="footer__brand-text">
+            Construcción y reformas en Uruguay.
+            Trabajamos con compromiso, calidad y puntualidad.
+          </p>
+          <a
+            href="https://wa.me/598098794903"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__wa"
+          >
+            💬 Escribinos por WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <p class="footer__heading">Navegación</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contacto</p>
+          <div class="footer__contact-item">📱 <strong>098 794 903</strong></div>
+          <div class="footer__contact-item">🇺🇾 Uruguay</div>
+          <div class="footer__contact-item">⏰ Lun–Sáb · 8:00–18:00</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ConstructUY — Todos los derechos reservados</p>
+        <a
+          href="https://wa.me/598098794903?text=Hola,%20quiero%20un%20presupuesto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-wa"
+          style="padding:10px 20px; font-size:.9rem;"
+        >
+          💬 WhatsApp ahora
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

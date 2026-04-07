@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Construcción y reformas en Uruguay. Trabajos rápidos, prolijos y al mejor precio. Solicitá presupuesto por WhatsApp." />
+  <title>ConstructUY — Construcción y Reformas en Uruguay</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Preconnect a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <!-- Checkbox hidden — controla el menú mobile sin JS -->
+  <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar__logo" aria-label="Inicio">
+        <span class="navbar__logo-icon">🏗</span>
+        ConstructUY
+      </a>
+
+      <!-- Links de navegación -->
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li>
+          <a href="contacto.html" class="navbar__cta">Contactar</a>
+        </li>
+      </ul>
+
+      <!-- Botón hamburger (mobile) — label apunta al checkbox -->
+      <label for="nav-toggle" class="navbar__hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════
+       HERO — SECCIÓN PRINCIPAL
+       Objetivo: llamar la atención y llevar
+       al usuario a contactar en segundos.
+  ════════════════════════════════════════ -->
+  <section class="hero">
+
+    <!-- Blob de luz decorativo -->
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero__content">
+
+        <!-- Etiqueta de confianza -->
+        <div class="hero__badge">
+          🇺🇾 Servicio en todo Uruguay
+        </div>
+
+        <!-- Titular principal -->
+        <h1 class="hero__title">
+          Construimos y reformamos<br>
+          tu hogar <em>sin complicaciones</em>
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="hero__subtitle">
+          Trabajos rápidos, prolijos y al mejor precio.
+          Coordiná hoy mismo con nuestra cuadrilla.
+        </p>
+
+        <!-- Botones CTA -->
+        <div class="hero__actions">
+          <!-- CTA principal — WhatsApp -->
+          <a
+            href="https://wa.me/598098794903?text=Hola,%20me%20interesa%20solicitar%20un%20presupuesto"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-lg"
+          >
+            👉 Solicitar presupuesto ahora
+          </a>
+
+          <!-- CTA secundario -->
+          <a href="servicios.html" class="btn btn-secondary btn-lg">
+            Ver servicios
+          </a>
+        </div>
+
+        <!-- Texto de confianza bajo el botón -->
+        <p class="hero__trust">
+          <strong>Atención directa por WhatsApp</strong>&nbsp;·&nbsp;Respuesta rápida
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SERVICIOS — RESUMEN RÁPIDO
+       Mostrar los 3 pilares del negocio.
+  ════════════════════════════════════════ -->
+  <section class="section" id="servicios">
+    <div class="container">
+
+      <!-- Encabezado de sección -->
+      <div class="animate-in">
+        <p class="section-label">Lo que hacemos</p>
+        <h2 class="section-title">Nuestros <span>servicios</span></h2>
+        <p class="section-subtitle">
+          Soluciones completas para tu vivienda, desde reformas puntuales
+          hasta obras nuevas.
+        </p>
+      </div>
+
+      <!-- Grilla de cards -->
+      <div class="services-grid">
+
+        <!-- Card 1: Reformas -->
+        <article class="service-card animate-in animate-in--delay-1">
+          <div class="service-card__icon" aria-hidden="true">🔨</div>
+          <h3 class="service-card__title">Reformas</h3>
+          <p class="service-card__text">
+            Renovamos tu casa, baño, cocina o cualquier espacio
+            de forma rápida y eficiente.
+          </p>
+        </article>
+
+        <!-- Card 2: Construcción -->
+        <article class="service-card animate-in animate-in--delay-2">
+          <div class="service-card__icon" aria-hidden="true">🏗️</div>
+          <h3 class="service-card__title">Construcción</h3>
+          <p class="service-card__text">
+            Realizamos obras desde cero con materiales de calidad
+            y mano de obra confiable.
+          </p>
+        </article>
+
+        <!-- Card 3: Mantenimiento -->
+        <article class="service-card animate-in animate-in--delay-3">
+          <div class="service-card__icon" aria-hidden="true">🔧</div>
+          <h3 class="service-card__title">Mantenimiento</h3>
+          <p class="service-card__text">
+            Solucionamos problemas, arreglos y mejoras
+            sin vueltas.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       CTA BAND — FRANJA DE CONVERSIÓN
+       Elemento de alto impacto para captar
+       leads inmediatos.
+  ════════════════════════════════════════ -->
+  <section class="cta-band" aria-label="Llamada a la acción">
+    <div class="container">
+      <div class="cta-band__inner">
+
+        <div>
+          <h2 class="cta-band__title">¿Necesitás<br>hacer un trabajo?</h2>
+          <p class="cta-band__text">
+            Contactanos ahora y te pasamos presupuesto sin compromiso.
+          </p>
+        </div>
+
+        <a
+          href="https://wa.me/598098794903?text=Hola,%20quiero%20hacer%20un%20trabajo.%20%C2%BFMe%20pueden%20dar%20un%20presupuesto?"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta-band__btn"
+        >
+          👉 Hablar por WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       QUIÉNES SOMOS — SNIPPET
+       Sección breve para generar confianza.
+  ════════════════════════════════════════ -->
+  <section class="about-snippet section">
+    <div class="container">
+      <div class="about-snippet__inner">
+
+        <!-- Texto izquierdo -->
+        <div class="animate-in">
+          <p class="section-label">El equipo</p>
+          <h2 class="section-title">
+            Quiénes <span>somos</span>
+          </h2>
+          <p class="section-subtitle">
+            Somos un equipo con experiencia real en construcción y reformas.
+            Hemos trabajado en cooperativas de viviendas, casas individuales
+            y viviendas de múltiples habitaciones.
+          </p>
+          <p class="section-subtitle" style="margin-top:12px;">
+            Nos enfocamos en hacer el trabajo bien, cumplir con los tiempos
+            y darte una solución clara sin complicaciones.
+          </p>
+
+          <!-- Estadísticas rápidas -->
+          <div class="about-snippet__stats">
+            <div class="stat">
+              <div class="stat__number">+50</div>
+              <div class="stat__label">Obras realizadas</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">10+</div>
+              <div class="stat__label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">24h</div>
+              <div class="stat__label">Tiempo de respuesta</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">100%</div>
+              <div class="stat__label">Compromiso</div>
+            </div>
+          </div>
+
+          <!-- Link a página completa -->
+          <div style="margin-top:32px;">
+            <a href="nosotros.html" class="btn btn-secondary">
+              Conocer más →
+            </a>
+          </div>
+        </div>
+
+        <!-- Elemento visual derecho (decorativo) -->
+        <div class="about-snippet__visual animate-in animate-in--delay-2" aria-hidden="true">
+          <div class="about-snippet__visual-bg"></div>
+          <div class="about-snippet__visual-content">
+            <p>Construí<br>con nosotros</p>
+            <strong>Uruguay 🇺🇾</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+       Presente en todas las páginas.
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Columna 1: Marca -->
+        <div>
+          <div class="footer__brand-name">
+            <span class="footer__brand-icon">🏗</span>
+            ConstructUY
+          </div>
+          <p class="footer__brand-text">
+            Construcción y reformas en Uruguay.
+            Trabajamos con compromiso, calidad y puntualidad.
+          </p>
+          <!-- WhatsApp en footer -->
+          <a
+            href="https://wa.me/598098794903"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__wa"
+          >
+            💬 Escribinos por WhatsApp
+          </a>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div>
+          <p class="footer__heading">Navegación</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div>
+          <p class="footer__heading">Contacto</p>
+          <div class="footer__contact-item">
+            📱 <strong>098 794 903</strong>
+          </div>
+          <div class="footer__contact-item">
+            🇺🇾 Uruguay
+          </div>
+          <div class="footer__contact-item">
+            ⏰ Lun–Sáb · 8:00–18:00
+          </div>
+        </div>
+
+      </div><!-- /footer__grid -->
+
+      <!-- Línea inferior -->
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © 2025 ConstructUY — Todos los derechos reservados
+        </p>
+        <a
+          href="https://wa.me/598098794903?text=Hola,%20quiero%20un%20presupuesto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-wa"
+          style="padding:10px 20px; font-size:.9rem;"
+        >
+          💬 WhatsApp ahora
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
